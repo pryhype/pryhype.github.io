@@ -1,184 +1,110 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>PryHype Dev Panel</title>
-    <style>
-      header {
-        background-color: #252525;
-        color: #fff;
-        padding: 1rem;
-      }
-      
-      h1 {
-        margin: 0;
-        font-size: 2rem;
-        font-weight: bold;
-      }
-      
-      nav ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        display: flex;
-      }
-      
-      nav li {
-        margin-right: 1rem;
-      }
-      
-      nav a {
-        color: #fff;
-        text-decoration: none;
-        font-size: 1.2rem;
-        font-weight: bold;
-      }
-      
-      nav a:hover {
-        border-bottom: 2px solid #fff;
-      }
-    </style>
-  </head>
-  <body>
-    <header>
-      <h1>PryHype Dev Panel</h1>
-      <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <!-- main content of the page goes here -->
-    </main>
-    <footer>
-      <!-- footer content of the page goes here -->
-    </footer>
-  </body>
-</html>
-
-
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PryHype Login</title>
   <style>
     body {
-      background-color: #202124;
-      color: #fff;
+      background-color: #121212;
       font-family: Arial, sans-serif;
-    }
-
-    .login-panel {
-      max-width: 400px;
-      margin: 50px auto;
-      padding: 20px;
-      border-radius: 10px;
-      background-color: #424242;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    }
-
-    .login-panel h1 {
-      text-align: center;
-      margin-bottom: 30px;
-    }
-
-    .login-form input[type="text"],
-    .login-form input[type="password"] {
-      width: 100%;
-      padding: 10px;
-      margin-bottom: 20px;
-      border: none;
-      border-radius: 5px;
-      background-color: #eee;
-      color: #333;
       font-size: 16px;
-    }
-
-    .login-form button {
-      width: 100%;
-      padding: 10px;
-      border: none;
-      border-radius: 5px;
-      background-color: #2196f3;
       color: #fff;
-      font-size: 16px;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .container {
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .login-panel {
+      background-color: #1c1c1c;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+      border-radius: 5px;
+      padding: 20px;
+      max-width: 400px;
+      width: 100%;
+      box-sizing: border-box;
+    }
+    
+    .form-group {
+      margin-bottom: 20px;
+      box-sizing: border-box;
+    }
+    
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      background-color: #2b2b2b;
+      color: #fff;
+      border-radius: 3px;
+      box-sizing: border-box;
+    }
+    
+    input[type="submit"] {
+      background-color: #2980b9;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 3px;
       cursor: pointer;
     }
-
-    .login-form button:hover {
-      background-color: #0c7cd5;
+    
+    input[type="submit"]:hover {
+      background-color: #1c6ea4;
     }
-
-    .dark-mode {
-      background-color: #424242;
-      color: #fff;
-    }
-
-    .dark-mode input[type="text"],
-    .dark-mode input[type="password"] {
-      background-color: #555;
-      color: #fff;
-    }
-
-    .dark-mode button {
-      background-color: #1e88e5;
-    }
-
-    .login-message {
-      display: none;
-      max-width: 400px;
-      margin: 50px auto;
-      padding: 20px;
-      border-radius: 10px;
-      background-color: #424242;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    
+    .error-message {
+      color: red;
       text-align: center;
-    }
-
-    .dark-mode .login-message {
-      background-color: #333;
+      margin-top: 10px;
+      font-size: 14px;
     }
   </style>
 </head>
 <body>
-  <div class="login-panel">
-    <h1>Login Panel</h1>
-    <form class="login-form" method="POST">
-      <label for="username">Username:</label>
-      <input type="text" id="username" name="username" required>
-      <label for="password">Password:</label>
-      <input type="password" id="password" name="password" required>
-      <button type="submit">Login</button>
+  <div class="container">
+    <form class="login-panel" id="login-form" method="POST">
+      <h2 style="text-align: center; margin-bottom: 20px;">PryHype Login</h2>
+      <div class="form-group">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" value="Admin" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <p id="error-message" class="error-message"></p>
+      </div>
+      <div class="form-group" style="text-align: center;">
+        <input type="submit" name="submit" value="Log in">
+      </div>
     </form>
   </div>
-
-  <div class="login-message">
-    <h2>Successful login!</h2>
-    <p>Nothing is there for now, but what will be there?
-    The newest updates, Every game version, Announcements, Future plans.</p>
-  </div>
-
   <script>
-    const body = document.querySelector('body');
-    const loginForm = document.querySelector('.login-form');
-    const loginMessage = document.querySelector('.login-message');
+    const form = document.getElementById('login-form');
+    const errorMessage = document.getElementById('error-message');
+    const username = 'Admin';
+    const password = '7TAlCHoCY172oPK';
 
-    loginForm.addEventListener('submit', (event) => {
-      event.preventDefault();
-      const username = event.target.username.value;
-      const password = event.target.password.value;
-        if (username === 'admin' && password === '123') {
-    body.classList.toggle('dark-mode');
-    loginForm.reset();
-    loginForm.style.display = 'none';
-    loginMessage.style.display = 'block';
-  } else {
-    alert('Invalid username or password. Please try again.');
-  }
-});
-</script>
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      if (form.username.value === username && form.password.value === password) {
+        window.location.href = 'redirect.html';
+      } else {
+        errorMessage.textContent = 'Incorrect username or password.';
+      }
+      form.password.value = '';
+    });
+  </script>
 </body>
-</html>

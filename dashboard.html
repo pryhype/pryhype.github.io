@@ -53,90 +53,97 @@
 </html>
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Game Development Dashboard - PryHype</title>
-    <style>
-      body {
-        background-color: rgb(12, 12, 12);
-        color: white;
-        font-family: Arial, sans-serif;
-      }
-      
-      .header {
-        text-align: center;
-        margin-top: 20px;
-      }
-      
-      .logo {
-        font-size: 36px;
-        font-weight: bold;
-        text-shadow: 2px 2px #000000;
-      }
-      
-      .main {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        margin: 20px;
-      }
-      
-      .button {
-        background-color: #383838;
-        color: white;
-        padding: 10px;
-        margin: 10px;
-        border: none;
-        border-radius: 5px;
-        box-shadow: 2px 2px #000000;
-        cursor: pointer;
-        transition: all 0.2s ease-in-out;
-      }
-      
-      .button:hover {
-        background-color: #444;
-        box-shadow: 4px 4px #000000;
-      }
-      
-      .random-text {
-        margin: 10px;
-        padding: 10px;
-        border: 1px solid white;
-        border-radius: 5px;
-        box-shadow: 2px 2px #000000;
-      }
-    </style>
-  </head>
-  
-  <body>
-    <div class="header">
-      <h1 class="logo">Game Development Dashboard</h1>
-    </div>
-    
-    <div class="main">
-      <button class="button">New Game</button>
-      <button class="button">Edit Game</button>
-      <button class="button">Delete Game</button>
-      
-      <div class="random-text">
-        <h2>Game Development Tips</h2>
-        <ul>
-          <li>Start small and build up from there.</li>
-          <li>Get feedback early and often.</li>
-          <li>Don't be afraid to make mistakes and learn from them.</li>
-        </ul>
-      </div>
-      
-      <div class="random-text">
-        <h2>Game Development Resources</h2>
-        <ul>
-          <li><a href="#">Unity Game Engine</a></li>
-          <li><a href="#">Unreal Engine</a></li>
-          <li><a href="#">Blender 3D Modeling</a></li>
-        </ul>
-      </div>
-    </div>
-  </body>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Game Development Dashboard</title>
+	<style>
+		body {
+			background-color: #1a1a1a;
+			color: white;
+			font-family: Arial, sans-serif;
+			font-size: 16px;
+			line-height: 1.5;
+			margin: 0;
+			padding: 0;
+			text-align: center;
+		}
+
+		.header {
+			background-color: #333;
+			padding: 10px;
+		}
+
+		h1 {
+			margin: 0;
+		}
+
+		.main {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			padding: 20px;
+		}
+
+		.box {
+			background-color: #444;
+			border-radius: 5px;
+			box-shadow: 2px 2px 5px #000000;
+			margin: 10px;
+			padding: 20px;
+			text-align: center;
+			width: calc(50% - 20px);
+		}
+
+		.box:hover {
+			background-color: #555;
+			box-shadow: 4px 4px 10px #000000;
+			cursor: pointer;
+		}
+
+		.box h2 {
+			margin: 0;
+		}
+
+		.box p {
+			margin: 10px 0;
+		}
+
+		@media screen and (max-width: 768px) {
+			.box {
+				width: 100%;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="header">
+		<h1>Game Development Dashboard</h1>
+	</div>
+	<div class="main">
+		<div class="box">
+			<h2>Game Analytics</h2>
+			<p>View detailed analytics on your games.</p>
+			<a href="#" class="button">View Analytics</a>
+		</div>
+		<div class="box">
+			<h2>Game Development Tools</h2>
+			<p>Access tools and resources to help with game development.</p>
+			<a href="#" class="button">View Tools</a>
+		</div>
+		<div class="box">
+			<h2>Game Testing</h2>
+			<p>Test your games on different platforms and devices.</p>
+			<a href="#" class="button">Test Game</a>
+		</div>
+		<div class="box">
+			<h2>Game Community</h2>
+			<p>Connect with other game developers and share your work.</p>
+			<a href="#" class="button">Join Community</a>
+		</div>
+	</div>
+</body>
 </html>
+
 <footer style="position: fixed; bottom: 0; left: 0; right: 0; background-color: black; color: white;">
     <h2 class="website-name">PryHype</h2>
     <nav>
@@ -150,4 +157,3 @@
       </div>
     </nav>
   </footer>
-  

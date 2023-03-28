@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>PryHype - Admin</title>
+  <style>
+    /* Styling */
+    body {
+      margin: 0;
+    }
+    
+    header {
+      background-color: #000;
+      color: #fff;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-family: Arial, sans-serif;
+    }
+    
+    .logo {
+      font-size: 2rem;
+      margin: 0;
+    }
+    
+    nav {
+      display: flex;
+      align-items: center;
+    }
+    
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-right: 20px;
+      transition: color 0.3s;
+    }
+    
+    nav a:hover {
+      color: rgb(0, 255, 242);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 class="logo">PryHype - Admin</h1>
+    <nav>
+      <a href="#">Log out</a>
+      <a href="#">Discord</a>
+    </nav>
+  </header>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Game Development Dashboard - PryHype</title>
+    <style>
+      body {
+        background-color: rgb(12, 12, 12);
+        color: white;
+        font-family: Arial, sans-serif;
+      }
+      
+      .header {
+        text-align: center;
+        margin-top: 20px;
+      }
+      
+      .logo {
+        font-size: 36px;
+        font-weight: bold;
+        text-shadow: 2px 2px #000000;
+      }
+      
+      .main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: 20px;
+      }
+      
+      .button {
+        background-color: #383838;
+        color: white;
+        padding: 10px;
+        margin: 10px;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 2px 2px #000000;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+      }
+      
+      .button:hover {
+        background-color: #444;
+        box-shadow: 4px 4px #000000;
+      }
+      
+      .random-text {
+        margin: 10px;
+        padding: 10px;
+        border: 1px solid white;
+        border-radius: 5px;
+        box-shadow: 2px 2px #000000;
+      }
+    </style>
+  </head>
+  
+  <body>
+    <div class="header">
+      <h1 class="logo">Game Development Dashboard</h1>
+    </div>
+    
+    <div class="main">
+      <button class="button">New Game</button>
+      <button class="button">Edit Game</button>
+      <button class="button">Delete Game</button>
+      
+      <div class="random-text">
+        <h2>Game Development Tips</h2>
+        <ul>
+          <li>Start small and build up from there.</li>
+          <li>Get feedback early and often.</li>
+          <li>Don't be afraid to make mistakes and learn from them.</li>
+        </ul>
+      </div>
+      
+      <div class="random-text">
+        <h2>Game Development Resources</h2>
+        <ul>
+          <li><a href="#">Unity Game Engine</a></li>
+          <li><a href="#">Unreal Engine</a></li>
+          <li><a href="#">Blender 3D Modeling</a></li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
+<footer style="position: fixed; bottom: 0; left: 0; right: 0; background-color: black; color: white;">
+    <h2 class="website-name">PryHype</h2>
+    <nav>
+      <a href="#">Contact Us</a>
+      <a href="#">Terms of Service</a>
+      <a href="#">Privacy Policy</a>
+      <div class="social-icons">
+        <i class="fa fa-facebook social-icon"></i>
+        <i class="fa fa-twitter social-icon"></i>
+        <i class="fa fa-instagram social-icon"></i>
+      </div>
+    </nav>
+  </footer>
+  

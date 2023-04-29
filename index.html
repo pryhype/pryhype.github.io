@@ -209,6 +209,63 @@
 	</script>
 </body>
 </html>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Old Website</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+      }
+
+      .message-box {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: black;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        width: 300px;
+        height: 300px;
+      }
+
+      .message-box p {
+        font-size: 18px;
+        margin-bottom: 20px;
+        color: white;
+      }
+
+      .message-box button {
+        background-color: turquoise;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-size: 24px;
+        cursor: pointer;
+      }
+
+      .message-box button:hover {
+        background-color: #00ced1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="message-box">
+      <h3>You are browsing our old website.</h3>
+      <p>You are browsing our old website. Please go to the new here.</p>
+      <button onclick="location.href='https://pryhype.repl.co'">Go to new</button>
+    </div>
+  </body>
+</html>
+
 <footer style="position: ; bottom: 0; left: 0; right: 0; background-color: black; color: white;">
   <h2 class="website-name">PryHype</h2>
   <h5 class="copyright">Copyright © 2023, All rights reserved.</h5>
